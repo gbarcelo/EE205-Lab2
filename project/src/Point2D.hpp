@@ -10,9 +10,23 @@
 // You'll need to turn this into a class.
 // Make sure you use the concept of encapsulation,
 // and hide the class's internal data.
-struct Point2D {
+class Point2D {
+  private:
     float x;
     float y;
+  public:
+    // Constructors:
+    Point2D(float x, float y);
+
+    // - Setters:
+    void set_x(float f);
+    void set_y(float f);
+
+    // - Getters:
+    float get_x(void);
+    float get_y(void);
+
+    // - Overloaders:
 };
 
 // lhs = "left hand side"
@@ -20,6 +34,6 @@ struct Point2D {
 Point2D operator+(Point2D lhs, Point2D rhs);
 Point2D operator-(Point2D lhs, Point2D rhs);
 Point2D operator*(Point2D lhs, Point2D rhs);
-Point2D operator/(Point2D lhs, Point2D rhs); 
+Point2D operator/(Point2D lhs, Point2D rhs);
 
 #endif // POINT2D_HPP

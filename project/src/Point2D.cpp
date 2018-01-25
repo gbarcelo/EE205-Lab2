@@ -4,12 +4,12 @@
 // Variables:
 
 // Methods:
-// - Constructor:
-Point2D::Point2D(void){
-  this->x = 0;
-  this->y = 0;
-}
-// - Setter:
+// - Constructors:
+Point2D::Point2D() : x(0),y(0) { }
+
+Point2D::Point2D(float x, float y) : x(x),y(y) { }
+
+// - Setters:
 void Point2D::set_x(float f){
   this->x = f;
 }
@@ -18,10 +18,11 @@ void Point2D::set_y(float f){
   this->y = f;
 }
 
-// - Getter:
+// - Getters:
 float Point2D::get_x(void){
   return this->x;
 }
+
 float Point2D::get_y(void){
   return this->y;
 }
