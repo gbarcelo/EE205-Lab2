@@ -16,7 +16,8 @@ class Point2D {
     float y;
   public:
     // Constructors:
-    Point2D(float x, float y);
+    Point2D();
+    Point2D(float, float);
 
     // - Setters:
     void set_x(float f);
