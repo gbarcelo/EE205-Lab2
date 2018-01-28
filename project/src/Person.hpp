@@ -12,10 +12,21 @@
 // Make sure to use both Point2D and std::string
 // as member variables in the class below.
 class Person { 
-private:
+	private:
+		std::string name;
+		Point2d pos;
+	public:
+		// Constructors:
+		Person(void);
+		Person(std::string,float,float);
+		
+		// Setters:
+		void set_name(std::string);
+		void set_location(float, float);
 
-public:
-
+		// Getters:
+		void get_name(void);
+		void get_location(void);
 };
 
 #endif // PERSON_HPP
