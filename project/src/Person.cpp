@@ -4,16 +4,16 @@
 
 // Methods:
 // - Constructors:
-Person::Person(void) : name(""), loc(0,0) { }
-Person::Persion(std::string n, float x, float y) : name(n), pos(x, y) { }
+Person::Person(void) : name(""), pos(0,0) { }
+Person::Person(std::string n, float x, float y) : name(n), pos(x, y) { }
 
 // - Setters:
 void Person::set_name(std::string n){
 	this->name = n;
 }
 
-void Person::set_location(float x, float y){
-	this->pos = Point2D(x, y);
+void Person::set_location(Point2D p){
+	this->pos = p;
 }
 
 // - Getters:

@@ -14,7 +14,7 @@
 class Person { 
 	private:
 		std::string name;
-		Point2d pos;
+		Point2D pos;
 	public:
 		// Constructors:
 		Person(void);
@@ -22,11 +22,11 @@ class Person {
 		
 		// Setters:
 		void set_name(std::string);
-		void set_location(float, float);
+		void set_location(Point2D);
 
 		// Getters:
-		void get_name(void);
-		void get_location(void);
+		std::string get_name(void);
+		Point2D get_location(void);
 };
 
 #endif // PERSON_HPP
