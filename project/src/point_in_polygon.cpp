@@ -30,10 +30,10 @@ for (i = 0, j = nloc-1; i < nloc; j = i++){
 }
 */
 
-bool pnpoly(int nvert, Person * points, Person test) {
+bool pnpoly(std::size_t nvert, Person * points, Person test) {
     Person * loc = points;
     Person pos = test;
-    int nloc = nvert;
+    std::size_t nloc = nvert;
 
     int i, j, c = 0;
     for (i = 0, j = nvert-1; i < nvert; j = i++) {
