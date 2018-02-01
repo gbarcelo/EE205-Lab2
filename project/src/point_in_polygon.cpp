@@ -31,17 +31,17 @@ for (i = 0, j = nloc-1; i < nloc; j = i++){
 */
 
 bool pnpoly(int nvert, Person * points, Person test) {
-    Person loc[] = points;
+    Person * loc = points;
     Person pos = test;
     int nloc = nvert;
 
     int i, j, c = 0;
     for (i = 0, j = nvert-1; i < nvert; j = i++) {
-      if (((loc->y[i] > pos->y) !=
-                (loc->y[j] > pos->y)) && (pos->x <
-                    (loc->x[j] - loc->x[i]) *
-                    (pos->y - loc->y[i]) /
-                    (loc->y[j] - loc->y[i]) + loc->x[i]) ) {
+      if (((loc[i].get_location().get_y() > pos.get_location().get_y()) !=
+                (loc[j].get_location().get_y() > pos.get_location().get_y())) && (pos.get_location().get_x() <
+                    (loc[j].get_location().get_x() - loc[i].get_location().get_x()) *
+                    (pos.get_location().get_y() - loc[i].get_location().get_y()) /
+                    (loc[j].get_location().get_y() - loc[i].get_location().get_y()) + loc[i].get_location().get_x()) ) {
             c = 1;
         }
     }
