@@ -29,20 +29,20 @@ float Point2D::get_y(void){
 
 //
 Point2D operator+(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()+rhs.get_x(),lhs.get_x()+rhs.get_y());
+  Point2D fin(lhs.get_x()+rhs.get_x(),lhs.get_y()+rhs.get_y());
   //fin.set_x();
   //fin.set_y();
   return fin;
 }
 Point2D operator-(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()-rhs.get_x(),lhs.get_x()-rhs.get_y());
+  Point2D fin(lhs.get_x()-rhs.get_x(),lhs.get_y()-rhs.get_y());
   return fin;
 }
 Point2D operator*(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()*rhs.get_x(),lhs.get_x()*rhs.get_y());
+  Point2D fin(lhs.get_x()*rhs.get_x(),lhs.get_y()*rhs.get_y());
   return fin;
 }
 Point2D operator/(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()/rhs.get_x(),lhs.get_x()/rhs.get_y());
+  Point2D fin(lhs.get_x()/rhs.get_x(),lhs.get_y()/rhs.get_y());
   return fin;
 }
