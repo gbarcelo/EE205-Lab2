@@ -1,5 +1,6 @@
 // Always include the original .hpp that corresponds to the .cpp
 #include "point_in_polygon.hpp"
+#include "Point2D.hpp"
 
 // Here is the original C version from Stack Overflow.
 //
@@ -46,3 +47,5 @@ bool pnpoly(int nvert, Person * points, Person test) {
     }
     return c;
 }
+
+    // Etc Methods:

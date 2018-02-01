@@ -18,6 +18,24 @@ void Point2D::set_y(float f){
   this->y = f;
 }
 
+// class Point2D *this = &Point2D
+//
+// Point2D FirstPoint = new Point2D(x,y)
+// Point2D SecPoint = new Point2D(x,y)
+// Point2D ThirPoint = new Point2D(x,y)
+//
+// Point2D *this = &FirstPoint
+// Point2D *this = &SecPoint
+//
+// FirstPoint.x = f;
+// this->
+//
+// int x = 1
+// int y = 3
+// int z = 6
+
+
+
 // - Getters:
 float Point2D::get_x(void){
   return this->x;
@@ -29,20 +47,20 @@ float Point2D::get_y(void){
 
 //
 Point2D operator+(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()+rhs.get_x(),lhs.get_y()+rhs.get_y());
+  Point2D fin(lhs.get_x()+rhs.get_x(),lhs.get_x()+rhs.get_y());
   //fin.set_x();
   //fin.set_y();
   return fin;
 }
 Point2D operator-(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()-rhs.get_x(),lhs.get_y()-rhs.get_y());
+  Point2D fin(lhs.get_x()-rhs.get_x(),lhs.get_x()-rhs.get_y());
   return fin;
 }
 Point2D operator*(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()*rhs.get_x(),lhs.get_y()*rhs.get_y());
+  Point2D fin(lhs.get_x()*rhs.get_x(),lhs.get_x()*rhs.get_y());
   return fin;
 }
 Point2D operator/(Point2D lhs, Point2D rhs){
-  Point2D fin(lhs.get_x()/rhs.get_x(),lhs.get_y()/rhs.get_y());
+  Point2D fin(lhs.get_x()/rhs.get_x(),lhs.get_x()/rhs.get_y());
   return fin;
 }
