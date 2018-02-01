@@ -27,12 +27,12 @@ test-Person: bin/test-Person.out
 test-Point2D: bin/test-Point2D.out
 	./bin/test-Point2D.out
 
-bin/test-Person.out: src/Person.o src/Point2D.o tst/test-Person.cpp 
+bin/test-Person.out: src/Person.o src/Point2D.o tst/test-Person.cpp
 	g++ -I"src/" -o ./bin/test-Person.out tst/test-Person.cpp src/Person.o src/Point2D.o
 
 bin/test-Point2D.out: src/Point2D.o tst/test-Point2D.cpp
 	g++ -I"src/" -o ./bin/test-Point2D.out tst/test-Point2D.cpp src/Point2D.o
-	
+
 clean:
 	rm ./src/*.o
 	rm ./bin/*.out

@@ -11,7 +11,7 @@
 
 // Make sure to use both Point2D and std::string
 // as member variables in the class below.
-class Person { 
+class Person {
 	private:
 		std::string name;
 		Point2D pos;
@@ -19,7 +19,7 @@ class Person {
 		// Constructors:
 		Person(void);
 		Person(std::string,float,float);
-		
+
 		// Setters:
 		void set_name(std::string);
 		void set_location(Point2D);

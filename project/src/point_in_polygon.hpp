@@ -22,7 +22,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 bool pnpoly(
         std::size_t num_points,
-        Person* points,
+        Person * points,
         Person test);
 
 #endif // POINT_IN_POLYGON_HPP
