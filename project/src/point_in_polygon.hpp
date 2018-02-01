@@ -20,9 +20,14 @@
 //      You can treat it like a regular unsigned integer.
 //
 ////////////////////////////////////////////////////////////////////////////////
-bool pnpoly(
+bool pnply(
         std::size_t num_points,
         Person* points,
         Person test);
 
 #endif // POINT_IN_POLYGON_HPP
+
+// private:
+//   std::size_t num_points;
+//   Person test;
+//   Point2D *points;
